@@ -1,0 +1,82 @@
+.noselect {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background: red;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+      background: #1b74da;
+     }
+
+     
+     
+     .noselect, .noselect span {
+      transition: 200ms;
+      text-align: start;
+     }
+     
+     .noselect .text {
+      transform: translateX(10px);
+      color: white;
+      font-weight: bold;
+     }
+     
+     .noselect .icon {
+      position: absolute;
+      transform: translateX(110px);
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     
+     .noselect i {
+      width: 15px;
+      color: #fff;
+      transition: transform .5s;
+     }
+     
+     .noselect:hover {
+      background: #0e4792;
+     }
+
+     .noselect:hover i{
+           transform: scale(1.2);
+     }
+     
+     .noselect:hover .text {
+      color: transparent;
+     }
+     
+     .noselect:hover .icon {
+      width: 150px;
+      border-left: none;
+      transform: translateX(0);
+     }
+     
+     .noselect:focus {
+      outline: none;
+     }
+     
+     .noselect:active .icon i {
+      transform: scale(0.8);
+     }
+
+     
+
+
+
+     @keyframes down-up {
+           from{
+              transform: translateY(4px);
+           }
+
+           to{
+
+            transform: translateY(-4px);
+           }
+     }
